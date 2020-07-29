@@ -29,7 +29,7 @@ app.get('/', (req,res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 })
 
-mongoose.connect("mongodb://127.0.0.1:27017/powerbrain", {
+mongoose.connect("mongodb://127.0.0.1:27017/powerreact", {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
@@ -45,7 +45,7 @@ connection.once("open", () => {
 // app.use("/elements", elementsRouter);
 // app.use("/tracks", tracksRouter);
 // app.use("/programs", programsRouter);
-app.use("/formats", formatsRouter);
+app.use("/api/formats", formatsRouter);
 // app.use("/categories", catsRouter);
 // app.use("/markets", marketsRouter);
 
