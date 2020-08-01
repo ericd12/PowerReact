@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:5000/api";
+export const API_URL = "http:/api";
 
 export const BLANK_ELEMENT = {
   elementCategory: "",

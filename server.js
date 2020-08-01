@@ -29,7 +29,7 @@ app.get('/-*', (req,res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
 })
 
-mongoose.connect("mongodb://127.0.0.1:27017/powerreact", {
+mongoose.connect("mongodb://user:user123@localhost:27017/test", {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
